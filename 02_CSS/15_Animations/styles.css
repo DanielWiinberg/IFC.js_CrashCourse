@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: aqua;
+    animation-name: example-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes example-animation{
+    from{
+        background-color: aqua;
+    }
+
+    to{
+        background-color: rgb(119, 44, 90);
+    }
+}

@@ -1,0 +1,21 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gray {
+    background-color: gainsboro;
+}
+
+.dark-gray {
+    background-color: gray;
+}
+
+.main-container p{
+    border: solid 1px gainsboro;
+    padding: 0.4rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.main-container p:hover{
+    cursor: pointer;
+}

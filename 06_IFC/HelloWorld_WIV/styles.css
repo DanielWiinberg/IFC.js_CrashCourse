@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+#viewer-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+
+#progress-bar{
+  position: absolute;
+  right: 0;
+  margin-top: 2rem;
+  margin: 1rem;
+  display: flex;
+}
+#progress-bar *:first-child{
+  margin-right: 5px;
+}
+
+.checkboxes {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.ifc-property-menu {
+  border: 1px solid gray;
+  width: 20rem;
+  position: absolute;
+  background-color: white;
+}
+
+.ifc-property-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: solid 1px gray;
+}
+
+.ifc-property-value {
+  width: 100%;
+  text-align: right;
+}
+
+#ifc-tree-menu {
+    position: absolute;
+    overflow-y: scroll;
+    background-color: white;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+li, ul{
+  cursor: pointer;
+}
+
+/* Remove default bullets */
+ul,
+#myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}

@@ -1,0 +1,29 @@
+p{
+    color: red;
+}
+.example-class{
+    color: blue;
+}
+#example-id{
+    color: green;
+}
+
+a[href="https://www.google.com"]{
+    color: teal
+}
+
+a[href*="google"]{
+    color: teal
+}
+
+a[href*="youtube"]{
+    color: magenta
+}
+
+.text-container > p{
+    color: blue
+}
+
+.first-text ~ p{
+    color: red;
+}

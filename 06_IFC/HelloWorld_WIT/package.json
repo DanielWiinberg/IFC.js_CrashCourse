@@ -1,0 +1,21 @@
+{
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "app.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.45.2"
+  },
+  "dependencies": {
+    "three": "^0.135.0",
+    "three-mesh-bvh": "^0.5.15",
+    "web-ifc-three": "0.0.117"
+  }
+}
